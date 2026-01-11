@@ -24,3 +24,80 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ===== Custom styles adapted from provided HTML ===== */
+/* Base spacing for fixed bars */
+body {
+  margin-top: 82px !important;
+  padding-top: 0 !important;
+}
+@media (max-width: 640px) {
+  body {
+    margin-top: 72px !important;
+    padding-top: 0 !important;
+  }
+}
+
+/* Correio top bar adjustments */
+.navbar {
+  top: 40px;
+}
+@media (max-width: 767px) {
+  .navbar {
+    top: 36px;
+  }
+}
+
+.barra-correio {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-top: -82px;
+}
+@media (max-width: 640px) {
+  .barra-correio {
+    margin-top: -72px;
+  }
+}
+
+/* Colors and fonts */
+:root,
+[data-bs-theme="light"] {
+  font-size: 14.5px;
+  letter-spacing: -0.035em;
+  --bs-success: #00AF66 !important;
+  --bs-success-rgb: 0,175,102 !important;
+  --bs-info: #2CD5C4 !important;
+  --bs-info-rgb: 44,213,196 !important;
+  --color-bg-joker: #fff;
+  --color-text-joker: #000;
+}
+
+.text-joker { color: var(--color-text-joker) !important; }
+.border-joker { border: 2px solid var(--color-text-joker) !important; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Pattern background */
+.bg-joker {
+  background-image: url(https://agencianbz.com/wp-content/uploads/2025/12/bg-verao-2026-07.png);
+  background-repeat: repeat;
+  background-size: 225px 225px;
+}
+.bg-joker-half-01 {
+  --pattern: url("https://agencianbz.com/wp-content/uploads/2025/12/bg-verao-2026-07.png");
+  background-image: linear-gradient(to bottom, transparent 50%, #fff 0), var(--pattern);
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 225px 225px;
+  background-position: 0 0, 0 0;
+}
+
+.px-menu { padding-right: .555rem !important; padding-left: .555rem !important; }
+.mx-menu { margin-right: .115rem !important; margin-left: .115rem !important; }
+.fs-menu { font-size: 17px; line-height: 1.4em; }
+
+/* Label/Date pill styles (to match design system chips) */
+/* (reverted custom label styles) */
