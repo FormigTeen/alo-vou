@@ -1,6 +1,7 @@
 "use client";
 
 import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartSolid, faFlag as faFlagSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular, faFlag as faFlagRegular } from "@fortawesome/free-regular-svg-icons";
@@ -78,9 +79,9 @@ export default function Home() {
             {subtitle}
           </p>
           <HeadingTag className={titleClasses + " mt-0 pt-0 pb-1 mb-1"}>
-            <a className={anchorClass} href={href}>
+            <Link className={anchorClass} href={href}>
               {title}
-            </a>
+            </Link>
           </HeadingTag>
           <p className="fs-6 text-black op-50 mb-2">
             {description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet."}
@@ -189,7 +190,7 @@ export default function Home() {
             <div className="col-12 col-lg-6 mb-3" style={{ maxWidth: 720 }}>
               <div className="row g-0">
                 <div className="col-md-12 col-12">
-                  <a href="/lugar" style={{ textDecoration: "none" }}>
+                  <Link href="/lugar" style={{ textDecoration: "none" }}>
                      <div className="ratio overflow-hidden position-relative" style={{ ["--bs-aspect-ratio" as any]: "100%" }}>
                        <img
                          src="https://aloalobahia.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-11-at-09.49.20.jpeg"
@@ -198,7 +199,7 @@ export default function Home() {
                          title="Procissão com imagem do Senhor do Bonfim é realizada em Salvador; veja vídeos"
                        />
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-12 col-12 px-2" style={{ zIndex: 1 }}>
                   <div className="d-flex justify-content-between align-items-center mb-4 text-black" style={{ marginTop: "-4rem", letterSpacing: "-0.05rem" }}>
@@ -235,7 +236,7 @@ export default function Home() {
                 <Col>
                   <Row className="g-0">
                     <Col md={12} xs={12}>
-                      <a href="/lugar" style={{ textDecoration: "none" }}>
+                      <Link href="/lugar" style={{ textDecoration: "none" }}>
                         <div className="ratio overflow-hidden position-relative" style={ratioStyle}>
                           <img
                             src="https://aloalobahia.com/wp-content/uploads/2026/01/IMG_3886-405x720.jpg"
@@ -244,7 +245,7 @@ export default function Home() {
                             title="Bell Marques reúne multidão em nova edição de corrida em Salvador; veja fotos"
                           />
                         </div>
-                      </a>
+                      </Link>
                     </Col>
                     <Col md={12} xs={12} className="px-2" style={{ zIndex: 1 }}>
                       <div className="d-flex justify-content-end align-items-center mb-4 text-black" style={{ marginTop: "-4rem", letterSpacing: "-0.05rem" }}>
@@ -267,7 +268,7 @@ export default function Home() {
                 <Col>
                   <Row className="g-0">
                     <Col md={12} xs={12}>
-                      <a href="/lugar" style={{ textDecoration: "none" }}>
+                      <Link href="/lugar" style={{ textDecoration: "none" }}>
                         <div className="ratio overflow-hidden position-relative" style={ratioStyle}>
                           <img
                             src="https://aloalobahia.com/wp-content/uploads/2026/01/0533337a-07d5-446c-a195-0583fbce2fc8-933x1400.jpeg"
@@ -276,7 +277,7 @@ export default function Home() {
                             title="Banjo Novo anuncia mais duas edições de verão até fevereiro"
                           />
                         </div>
-                      </a>
+                      </Link>
                     </Col>
                     <Col md={12} xs={12} className="px-2" style={{ zIndex: 1 }}>
                       <div className="d-flex justify-content-end align-items-center mb-4 text-black" style={{ marginTop: "-4rem", letterSpacing: "-0.05rem" }}>
@@ -299,7 +300,7 @@ export default function Home() {
                 <Col>
                   <Row className="g-0">
                     <Col md={12} xs={12}>
-                      <a href="/lugar" style={{ textDecoration: "none" }}>
+                      <Link href="/lugar" style={{ textDecoration: "none" }}>
                         <div className="ratio overflow-hidden position-relative" style={ratioStyle}>
                           <img
                             src="https://aloalobahia.com/wp-content/uploads/2026/01/Screenshot-2026-01-10-at-21.05.48-2.jpg"
@@ -308,7 +309,7 @@ export default function Home() {
                             title="Olodum recebe Gilmelândia e É o Tchan em nova edição da Terça da Benção"
                           />
                         </div>
-                      </a>
+                      </Link>
                     </Col>
                     <Col md={12} xs={12} className="px-2" style={{ zIndex: 1 }}>
                       <div className="d-flex justify-content-end align-items-center mb-4 text-black" style={{ marginTop: "-4rem", letterSpacing: "-0.05rem" }}>
@@ -331,7 +332,7 @@ export default function Home() {
                 <Col>
                   <Row className="g-0">
                     <Col md={12} xs={12}>
-                      <a href="/lugar" style={{ textDecoration: "none" }}>
+                      <Link href="/lugar" style={{ textDecoration: "none" }}>
                         <div className="ratio overflow-hidden position-relative" style={ratioStyle}>
                           <img
                             src="https://aloalobahia.com/wp-content/uploads/2026/01/mundo-de-bita.jpg"
@@ -340,7 +341,7 @@ export default function Home() {
                             title="Mundo Bita lota Parque da Cidade com show gratuito; veja fotos"
                           />
                         </div>
-                      </a>
+                      </Link>
                     </Col>
                     <Col md={12} xs={12} className="px-2" style={{ zIndex: 1 }}>
                       <div className="d-flex justify-content-end align-items-center mb-4 text-black" style={{ marginTop: "-4rem", letterSpacing: "-0.05rem" }}>
@@ -363,7 +364,7 @@ export default function Home() {
                 <Col>
                   <Row className="g-0">
                     <Col md={12} xs={12}>
-                      <a href="/lugar" style={{ textDecoration: "none" }}>
+                      <Link href="/lugar" style={{ textDecoration: "none" }}>
                         <div className="ratio overflow-hidden position-relative" style={ratioStyle}>
                           <img
                             src="https://aloalobahia.com/wp-content/uploads/2026/01/aaaaax.jpg"
@@ -372,7 +373,7 @@ export default function Home() {
                             title="Mari Gonzalez visita Casa de Vidro do BBB 26 em Salvador"
                           />
                         </div>
-                      </a>
+                      </Link>
                     </Col>
                     <Col md={12} xs={12} className="px-2" style={{ zIndex: 1 }}>
                       <div className="d-flex justify-content-end align-items-center mb-4 text-black" style={{ marginTop: "-4rem", letterSpacing: "-0.05rem" }}>
